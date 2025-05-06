@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Charte Graphique – Recouvrement des Recettes État Togolais</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icônes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    :root {
+      /* Couleurs drapeau togolais */
+      --gov-green: #036B5E;
+      --gov-yellow: #FFCE15;
+      --gov-red: #EA2839;
+      
+      /* Palette étendue */
+      --primary: var(--gov-green);
+      --primary-dark: #0D6D88;
+      --primary-light: #4CB97E;
+      --primary-subtle: #E6F5ED;
+      
+      --accent: var(--gov-yellow);
+      --accent-dark: #E5BC14;
+      --accent-light: #FDDE63;
+      
+      --danger: var(--gov-red);
+      --danger-dark: #C41E2D;
+      --danger-light: #F1717C;
+      
+      --neutral-900: #111827;
+      --neutral-800: #1F2937;
+      --neutral-700: #374151;
+      --neutral-600: #4B5563;
+      --neutral-500: #6B7280;
+      --neutral-400: #9CA3AF;
+      --neutral-300: #D1D5DB;
+      --neutral-200: #E5E7EB;
+      --neutral-100: #F3F4F6;
+      --neutral-50: #F9FAFB;
+      
+      --success: #10B981;
+      --info: #3B82F6;
+      --warning: #F59E0B;
+      
+      /* Typographie */
+      --font-title: 'Montserrat', sans-serif;
+      --font-base: 'Roboto', sans-serif;
+      --font-size-xs: 0.75rem;
+      --font-size-sm: 0.875rem;
+      --font-size-base: 1rem;
+      --font-size-lg: 1.125rem;
+      --font-size-xl: 1.25rem;
+      --font-size-2xl: 1.5rem;
+      --font-size-3xl: 1.875rem;
+      --font-size-4xl: 2.25rem;
+      
+      --line-height-tight: 1.25;
+      --line-height-base: 1.5;
+      --line-height-relaxed: 1.75;
+      
+      /* Espacement */
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      
+      /* Bordures et ombres */
+      --radius-sm: 0.25rem;
+      --radius-md: 0.375rem;
+      --radius-lg: 0.5rem;
+      --radius-xl: 0.75rem;
+      
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+      --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.05), 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: var(--font-base);
+      font-size: var(--font-size-base);
+      line-height: var(--line-height-base);
+      color: var(--neutral-800);
+      background-color: var(--neutral-50);
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 var(--space-4);
+    }
+    
+    /* Header et navigation */
+    .header-top {
+      background-color: var(--primary);
+      color: white;
+      padding: var(--space-2) 0;
+      font-size: var(--font-size-sm);
+    }
+    
+    .header-top .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .header-top-links {
+      display: flex;
+      gap: var(--space-6);
+    }
+    
+    .header-top-links a {
+      color: white;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+    }
+    
+    .header-top-links a:hover {
+      text-decoration: underline;
+    }
+    
+    .header-main {
+      background-color: white;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+      z-index: 10;
+    }
+    
+    .header-main .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: var(--space-4) var(--space-4);
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+    }
+    
+    .logo img {
+      height: 60px;
+    }
+    
+    .logo-text h1 {
+      font-family: var(--font-title);
+      font-size: var(--font-size-xl);
+      font-weight: 600;
+      color: var(--neutral-900);
+      margin: 0;
+    }
+    
+    .logo-text p {
+      margin: var(--space-1) 0 0;
+      font-size: var(--font-size-sm);
+      color: var(--neutral-500);
+    }
+    
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: var(--space-8);
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: var(--space-6);
+    }
+    
+    .nav-links a {
+      text-decoration: none;
+      color: var(--neutral-700);
+      font-weight: 500;
+      position: relative;
+      padding: var(--space-2) 0;
+      transition: color 0.2s;
+    }
+    
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--primary);
+    }
+    
+    .nav-links a.active::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: var(--primary);
+      border-radius: var(--radius-sm);
+    }
+    
+    .hero {
+      background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+      color: white;
+      padding: var(--space-16) 0;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 50%;
+      background-image: url('/api/placeholder/600/400');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.1;
+    }
+    
+    .hero .container {
+      position: relative;
+      z-index: 1;
+    }
+    
+    .hero-content {
+      max-width: 600px;
+    }
+    
+    .hero h2 {
+      font-family: var(--font-title);
+      font-size: var(--font-size-4xl);
+      font-weight: 700;
+      margin-bottom: var(--space-6);
+      line-height: var(--line-height-tight);
+    }
+    
+    .hero p {
+      font-size: var(--font-size-lg);
+      line-height: var(--line-height-relaxed);
+      margin-bottom: var(--space-8);
+      opacity: 0.9;
+    }
+    
+    .hero-buttons {
+      display: flex;
+      gap: var(--space-4);
+    }
+    
+    /* Section styles */
+    .section {
+      padding: var(--space-16) 0;
+    }
+    
+    .section-title {
+      font-family: var(--font-title);
+      font-size: var(--font-size-3xl);
+      font-weight: 600;
+      color: var(--neutral-900);
+      margin-bottom: var(--space-6);
+      position: relative;
+      padding-bottom: var(--space-3);
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background-color: var(--primary);
+      border-radius: var(--radius-sm);
+    }
+    
+    .subtitle {
+      font-family: var(--font-title);
+      font-size: var(--font-size-xl);
+      font-weight: 600;
+      color: var(--neutral-800);
+      margin-top: var(--space-8);
+      margin-bottom: var(--space-4);
+    }
+    
+    /* Palette de couleurs */
+    .color-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: var(--space-4);
+      margin-bottom: var(--space-8);
+    }
+    
+    .color-card {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--neutral-200);
+      background-color: white;
+    }
+    
+    .color-preview {
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      color: white;
+      position: relative;
+    }
+    
+    .color-preview.light-text {
+      color: var(--neutral-800);
+    }
+    
+    .color-info {
+      padding: var(--space-4);
+      text-align: left;
+    }
+    
+    .color-info h4 {
+      margin: 0 0 var(--space-2);
+      font-size: var(--font-size-base);
+      font-weight: 500;
+    }
+    
+    .color-info p {
+      margin: 0;
+      font-size: var(--font-size-sm);
+      color: var(--neutral-600);
+      font-family: monospace;
+    }
+    
+    /* Typographie */
+    .typography-section {
+      background-color: white;
+      padding: var(--space-8);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      margin-bottom: var(--space-8);
+    }
+    
+    .font-sample {
+      margin-bottom: var(--space-6);
+    }
+    
+    .font-sample:last-child {
+      margin-bottom: 0;
+    }
+    
+    .font-info {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: var(--space-2);
+      margin-bottom: var(--space-2);
+      border-bottom: 1px solid var(--neutral-200);
+      font-size: var(--font-size-sm);
+    }
+    
+    .font-name {
+      font-weight: 500;
+      color: var(--neutral-800);
+    }
+    
+    .font-usage {
+      color: var(--neutral-600);
+    }
+    
+    /* Composants */
+    .components-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-8);
+    }
+    
+    @media (max-width: 768px) {
+      .components-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    .component-section {
+      background-color: white;
+      padding: var(--space-8);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+    }
+    
+    .component-title {
+      font-family: var(--font-title);
+      font-size: var(--font-size-lg);
+      font-weight: 600;
+      margin-top: 0;
+      margin-bottom: var(--space-4);
+      color: var(--primary-dark);
+    }
+    
+    /* Boutons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--space-3) var(--space-6);
+      border-radius: var(--radius-md);
+      font-family: var(--font-base);
+      font-size: var(--font-size-base);
+      font-weight: 500;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s;
+      gap: var(--space-2);
+      border: none;
+    }
+    
+    .btn-icon {
+      padding: var(--space-2) var(--space-4);
+    }
+    
+    .btn-lg {
+      padding: var(--space-4) var(--space-8);
+      font-size: var(--font-size-lg);
+    }
+    
+    .btn-sm {
+      padding: var(--space-2) var(--space-4);
+      font-size: var(--font-size-sm);
+    }
+    
+    .btn-primary {
+      background-color: var(--primary);
+      color: white;
+    }
+    
+    .btn-primary:hover {
+      background-color: var(--primary-dark);
+    }
+    
+    .btn-outline {
+      background-color: transparent;
+      border: 2px solid var(--primary-subtle);
+      color: black;
+    }
+    
+    .btn-outline:hover {
+      background-color: var(--primary-subtle);
+      color: black;
+    }
+    
+    .btn-secondary {
+      background-color: var(--accent);
+      color: var(--neutral-900);
+    }
+    
+    .btn-secondary:hover {
+      background-color: var(--accent-dark);
+    }
+    
+    .btn-danger {
+      background-color: var(--danger);
+      color: white;
+    }
+    
+    .btn-danger:hover {
+      background-color: var(--danger-dark);
+    }
+    
+    .btn-ghost {
+      background-color: transparent;
+      color: var(--primary);
+    }
+    
+    .btn-ghost:hover {
+      background-color: var(--primary-subtle);
+    }
+    
+    .buttons-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-4);
+      margin-bottom: var(--space-6);
+    }
+    
+    /* Formulaires */
+    .form-group {
+      margin-bottom: var(--space-6);
+    }
+    
+    .form-label {
+      display: block;
+      font-weight: 500;
+      margin-bottom: var(--space-2);
+      color: var(--neutral-700);
+    }
+    
+    .form-hint {
+      display: block;
+      font-size: var(--font-size-sm);
+      color: var(--neutral-500);
+      margin-top: var(--space-1);
+    }
+    
+    .form-input,
+    .form-select,
+    .form-textarea {
+      width: 100%;
+      padding: var(--space-3) var(--space-4);
+      font-size: var(--font-size-base);
+      border: 1px solid var(--neutral-300);
+      border-radius: var(--radius-md);
+      background-color: white;
+      color: var(--neutral-800);
+      transition: border-color 0.2s, box-shadow 0.2s;
+      font-family: var(--font-base);
+    }
+    
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(0, 158, 73, 0.15);
+    }
+    
+    .form-input::placeholder {
+      color: var(--neutral-400);
+    }
+    
+    .form-textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+    
+    .form-check {
+      display: flex;
+      align-items: center;
+      margin-bottom: var(--space-2);
+    }
+    
+    .form-check input {
+      margin-right: var(--space-2);
+    }
+    
+    .form-actions {
+      display: flex;
+      gap: var(--space-4);
+      margin-top: var(--space-6);
+    }
+    
+    /* Cartes */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: var(--space-6);
+    }
+    
+    .card {
+      background-color: white;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .card-image {
+      height: 160px;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .card-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 120px;
+      background-color: var(--primary-subtle);
+    }
+    
+    .card-icon i {
+      font-size: 2.5rem;
+      color: var(--primary);
+    }
+    
+    .card-content {
+      padding: var(--space-6);
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .card-title {
+      font-family: var(--font-title);
+      font-size: var(--font-size-lg);
+      font-weight: 600;
+      margin: 0 0 var(--space-3);
+      color: var(--neutral-900);
+    }
+    
+    .card-text {
+      margin: 0 0 var(--space-6);
+      color: var(--neutral-600);
+      flex-grow: 1;
+    }
+    
+    .card-footer {
+      margin-top: auto;
+    }
+    
+    /* Alertes */
+    .alert {
+      padding: var(--space-4);
+      border-radius: var(--radius-md);
+      margin-bottom: var(--space-6);
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-3);
+    }
+    
+    .alert-icon {
+      font-size: var(--font-size-xl);
+      padding-top: var(--space-1);
+    }
+    
+    .alert-content {
+      flex-grow: 1;
+    }
+    
+    .alert-title {
+      font-weight: 500;
+      margin: 0 0 var(--space-1);
+    }
+    
+    .alert-text {
+      margin: 0;
+    }
+    
+    .alert-success {
+      background-color: #ECFDF5;
+      color: #065F46;
+    }
+    
+    .alert-info {
+      background-color: #EFF6FF;
+      color: #1E40AF;
+    }
+    
+    .alert-warning {
+      background-color: #FFFBEB;
+      color: #92400E;
+    }
+    
+    .alert-danger {
+      background-color: #FEF2F2;
+      color: #991B1B;
+    }
+    
+    /* Badges */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: var(--space-1) var(--space-2);
+      border-radius: var(--radius-sm);
+      font-size: var(--font-size-xs);
+      font-weight: 500;
+      line-height: 1;
+      gap: var(--space-1);
+    }
+    
+    .badge-primary {
+      background-color: var(--primary);
+      color: white;
+    }
+    
+    .badge-secondary {
+      background-color: var(--accent);
+      color: var(--neutral-900);
+    }
+    
+    .badge-danger {
+      background-color: var(--danger);
+      color: white;
+    }
+    
+    .badge-outline {
+      background-color: transparent;
+      border: 1px solid currentColor;
+    }
+    
+    /* Tables */
+    .table-container {
+      overflow-x: auto;
+      margin-bottom: var(--space-6);
+    }
+    
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    .table th,
+    .table td {
+      padding: var(--space-3) var(--space-4);
+      text-align: left;
+      border-bottom: 1px solid var(--neutral-200);
+    }
+    
+    .table th {
+      font-weight: 500;
+      color: var(--neutral-700);
+      background-color: var(--neutral-100);
+    }
+    
+    .table tr:last-child td {
+      border-bottom: none;
+    }
+    
+    .table-striped tr:nth-child(even) {
+      background-color: var(--neutral-50);
+    }
+    
+    /* Utilities */
+    .text-center { text-align: center; }
+    .text-left { text-align: left; }
+    .text-right { text-align: right; }
+    
+    .mb-0 { margin-bottom: 0; }
+    .mb-1 { margin-bottom: var(--space-1); }
+    .mb-2 { margin-bottom: var(--space-2); }
+    .mb-4 { margin-bottom: var(--space-4); }
+    .mb-6 { margin-bottom: var(--space-6); }
+    .mb-8 { margin-bottom: var(--space-8); }
+    
+    .mt-6 { margin-top: var(--space-6); }
+    .mt-8 { margin-top: var(--space-8); }
+    .mt-16 { margin-top: var(--space-16); }
+    
+    /* Footer */
+    .footer {
+      background-color: var(--neutral-800);
+      color: white;
+      padding: var(--space-12) 0 var(--space-6);
+    }
+    
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: var(--space-8);
+      margin-bottom: var(--space-12);
+    }
+    
+    @media (max-width: 768px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      margin-bottom: var(--space-4);
+    }
+    
+    .footer-logo img {
+      height: 40px;
+    }
+    
+    .footer-logo-text {
+      font-weight: 500;
+      font-size: var(--font-size-lg);
+    }
+    
+    .footer-about {
+      margin-top: var(--space-4);
+      color: var(--neutral-300);
+      font-size: var(--font-size-sm);
+      line-height: var(--line-height-relaxed);
+    }
+    
+    .footer-title {
+      font-weight: 600;
+      font-size: var(--font-size-base);
+      margin-bottom: var(--space-4);
+      color: white;
+    }
+    
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .footer-links li {
+      margin-bottom: var(--space-2);
+    }
+    
+    .footer-links a {
+      color: var(--neutral-300);
+      text-decoration: none;
+      font-size: var(--font-size-sm);
+      transition: color 0.2s;
+    }
+    
+    .footer-links a:hover {
+      color: white;
+    }
+    
+    .footer-contact {
+      color: var(--neutral-300);
+      font-size: var(--font-size-sm);
+    }
+    
+    .footer-contact p {
+      margin: 0 0 var(--space-2);
+    }
+    
+    .footer-social {
+      display: flex;
+      gap: var(--space-3);
+      margin-top: var(--space-4);
+    }
+    
+    .social-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background-color: rgba(255,255,255,0.1);
+      color: white;
+      transition: background-color 0.2s;
+    }
+    
+    .social-icon:hover {
+      background-color: var(--primary);
+    }
+    
+    .footer-bottom {
+      padding-top: var(--space-6);
+      border-top: 1px solid rgba(255,255,255,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: var(--font-size-xs);
+      color: var(--neutral-400);
+    }
+    
+    .footer-bottom-links {
+      display: flex;
+      gap: var(--space-4);
+    }
+    
+    .footer-bottom-links a {
+      color: var(--neutral-400);
+      text-decoration: none;
+    }
+    
+    .footer-bottom-links a:hover {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- En-tête -->
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top-links">
+          <a href="#"><i class="fas fa-info-circle"></i> À propos</a>
+          <a href="#"><i class="fas fa-question-circle"></i> Aide</a>
+        </div>
+        <div class="header-top-links">
+          <a href="#"><i class="fas fa-phone"></i> Contact</a>
+          <a href="#"><i class="fas fa-globe"></i> Français</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="header-main">
+      <div class="container">
+        <div class="logo">
+          <img src="/api/placeholder/60/60" alt="Logo République Togolaise">
+          <div class="logo-text">
+            <h1>Recouvrement - État Togolais</h1>
+            <p>Plateforme de gestion des recettes publiques</p>
+          </div>
+        </div>
+        
+        <div class="main-nav">
+          <div class="nav-links">
+            <a href="#" class="active">Accueil</a>
+            <a href="#">Services</a>
+            <a href="#">Actualités</a>
+            <a href="#">Documentation</a>
+            <a href="#">Contact</a>
+          </div>
+          
+          <a href="#" class="btn btn-primary btn-icon">
+            <i class="fas fa-user"></i> Espace personnel
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h2>Facilitez vos démarches de paiement des taxes et redevances</h2>
+        <p>Une plateforme moderne et sécurisée pour gérer efficacement toutes vos obligations fiscales envers l'État togolais.</p>
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-secondary btn-lg">Déclarer en ligne</a>
+          <a href="#" class="btn btn-outline btn-lg">Consulter votre dossier</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contenu du moodboard -->
+  <div class="container">
+    <!-- Système de design -->
+    <section class="section">
+      <h2 class="section-title">Charte graphique - Recouvrement de l'État Togolais</h2>
+      
+      <!-- Palette de couleurs -->
+      <div class="subtitle">1. Palette de couleurs</div>
+      
+      <h3>Couleurs principales</h3>
+      <div class="color-grid">
+        <div class="color-card">
+          <div class="color-preview" style="background-color: var(--primary);">Primaire</div>
+          <div class="color-info">
+            <h4>Vert Primaire</h4>
+            <p>#009E49</p>
+            <p>--primary</p>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-preview" style="background-color: var(--primary-dark);">Primaire Foncé</div>
+          <div class="color-info">
+            <h4>Vert Foncé</h4>
+            <p>#007A38</p>
+            <p>--primary-dark</p>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-preview" style="background-color: var(--primary-light);">Primaire Clair</div>
+          <div class="color-info">
+            <h4>Vert Clair</h4>
+            <p>#4CB97E</p>
+            <p>--primary-light</p>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-preview light-text" style="background-color: var(--primary-subtle);">Primaire Subtle</div>
+          <div class="color-info">
+            <h4>Vert Subtle</h4>
+            <p>#E6F5ED</p>
+            <p>--primary-subtle</p>
+          </div>
+        </div>
+      </div>
+      
+      <h3>Couleurs drapeau togolais</h3>
+      <div class="color-grid">
+        <div class="color-card">
+          <div class="color-preview" style="background-color: var(--gov-green);">Vert</div>
+          <div class="color-info">
+            <h4>Vert Drapeau</h4>
+            <p>#009E49</p>
+            <p>--gov-green</p>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-preview light-text" style="background-color: var(--gov-yellow);">Jaune</div>
+          <div class="color-info">
+            <h4>Jaune Drapeau</h4>
+            <p>#FCD116</p>
+            <p>--gov-yellow</p>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-preview" style="background-color: var(--gov-red);">Rouge</div>
+          <div class="color-info">
+            <h4>Rouge Drapeau</h4>
+            <p>#EA2839</p>
+            <p>--gov-red</p>
+          </div>
+        </div>
+      </div>
+      
+      <h3>Couleurs neutres</h3>
+      <div class="color-grid">
+        <div class="color-card">
+          <div class="color-preview" style="background-color: var(--neutral-900);">900</div>
+          <div class="color-info">
+            <h4>Neutre 900</h4>
+            <p>#111827</p>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-preview" style="background-color: var(--neutral-700);">700</div>
+          <div class="color-info">
+            <h4>Neutre 700</h4>
+            <p>#374151</p>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-preview" style="background-color: var(--neutral-500);">500</div>
+          <div class="color-info">
+            <h4>Neutre 500</h4>
+            <p>#6B7280</p>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-preview light-text" style="background-color: var(--neutral-300);">300</div>
+          <div class="color-info">
+            <h4>Neutre 300</h4>
+            <p>#D1D5DB</p>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-preview light-text" style="background-color: var(--neutral-100);">100</div>
+          <div class="color-info">
+            <h4>Neutre 100</h4>
+            <p>#F3F4F6</p>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-preview light-text" style="background-color: var(--neutral-50);">50</div>
+          <div class="color-info">
+            <h4>Neutre 50</h4>
+            <p>#F9FAFB</p>
+          </div>
+        </div>
+      </div>
+      
+      <h3>Couleurs de statut</h3>
+      <div class="color-grid">
+        <div class="color-card">
+          <div class="color-preview" style="background-color: var(--success);">Succès</div>
+          <div class="color-info">
+            <h4>Succès</h4>
+            <p>#10B981</p>
+            <p>--success</p>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-preview" style="background-color: var(--info);">Information</div>
+          <div class="color-info">
+            <h4>Information</h4>
+            <p>#3B82F6</p>
+            <p>--info</p>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-preview" style="background-color: var(--warning);">Avertissement</div>
+          <div class="color-info">
+            <h4>Avertissement</h4>
+            <p>#F59E0B</p>
+            <p>--warning</p>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-preview" style="background-color: var(--danger);">Danger</div>
+          <div class="color-info">
+            <h4>Danger</h4>
+            <p>#EA2839</p>
+            <p>--danger</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Typographie -->
+      <div class="subtitle">2. Typographie</div>
+      <div class="typography-section">
+        <div class="font-sample">
+          <div class="font-info">
+            <span class="font-name">Montserrat</span>
+            <span class="font-usage">Utilisée pour les titres et sous-titres</span>
+          </div>
+          <h1 style="font-family: var(--font-title); font-size: var(--font-size-4xl); margin-bottom: var(--space-4);">Titre Principal H1</h1>
+          <h2 style="font-family: var(--font-title); font-size: var(--font-size-3xl); margin-bottom: var(--space-4);">Titre Secondaire H2</h2>
+          <h3 style="font-family: var(--font-title); font-size: var(--font-size-2xl); margin-bottom: var(--space-4);">Sous-titre H3</h3>
+          <h4 style="font-family: var(--font-title); font-size: var(--font-size-xl); margin-bottom: var(--space-4);">Titre de section H4</h4>
+          <h5 style="font-family: var(--font-title); font-size: var(--font-size-lg); margin-bottom: var(--space-4);">Titre mineur H5</h5>
+        </div>
+        
+        <div class="font-sample">
+          <div class="font-info">
+            <span class="font-name">Roboto</span>
+            <span class="font-usage">Utilisée pour le contenu et le texte courant</span>
+          </div>
+          <p style="font-size: var(--font-size-base); margin-bottom: var(--space-4);">Paragraphe standard - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Ut in mauris eu erat cursus blandit. Integer mollis ligula a metus ultricies, eget eleifend nunc blandit.</p>
+          <p style="font-size: var(--font-size-sm); margin-bottom: var(--space-4);">Petit texte - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Utilisé pour les légendes, notes de bas de page et informations secondaires.</p>
+          <p style="font-weight: 500; margin-bottom: var(--space-4);">Texte en semi-gras - Utilisé pour mettre en évidence certaines informations importantes.</p>
+          <p style="font-weight: 700; margin-bottom: var(--space-4);">Texte en gras - Utilisé pour les informations très importantes ou les titres dans le corps du texte.</p>
+        </div>
+      </div>
+      
+      <!-- Composants -->
+      <div class="subtitle">3. Composants UI</div>
+      <div class="components-grid">
+        <!-- Boutons -->
+        <div class="component-section">
+          <h3 class="component-title">Boutons</h3>
+          
+          <p>Boutons principaux</p>
+          <div class="buttons-group">
+            <button class="btn btn-primary">Bouton primaire</button>
+            <button class="btn btn-secondary">Bouton secondaire</button>
+            <button class="btn btn-outline">Bouton contour</button>
+            <button class="btn btn-danger">Bouton danger</button>
+          </div>
+          
+          <p>Tailles de boutons</p>
+          <div class="buttons-group">
+            <button class="btn btn-primary btn-sm">Petit</button>
+            <button class="btn btn-primary">Normal</button>
+            <button class="btn btn-primary btn-lg">Grand</button>
+          </div>
+          
+          <p>Boutons avec icônes</p>
+          <div class="buttons-group">
+            <button class="btn btn-primary"><i class="fas fa-save"></i> Enregistrer</button>
+            <button class="btn btn-outline"><i class="fas fa-download"></i> Télécharger</button>
+            <button class="btn btn-ghost"><i class="fas fa-plus"></i> Ajouter</button>
+          </div>
+        </div>
+        
+        <!-- Formulaires -->
+        <div class="component-section">
+          <h3 class="component-title">Formulaires</h3>
+          
+          <div class="form-group">
+            <label class="form-label" for="example-input">Numéro de référence</label>
+            <input class="form-input" type="text" id="example-input" placeholder="REC-2025-00001">
+            <span class="form-hint">Format: REC-ANNÉE-NUMÉRO</span>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label" for="example-select">Type de paiement</label>
+            <select class="form-select" id="example-select">
+              <option>Taxe foncière</option>
+              <option>Impôt sur le revenu</option>
+              <option>Patente</option>
+              <option>Redevance</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label" for="example-textarea">Commentaires</label>
+            <textarea class="form-textarea" id="example-textarea" placeholder="Ajoutez des détails supplémentaires..."></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label">Options</label>
+            <div class="form-check">
+              <input type="checkbox" id="check1">
+              <label for="check1">Recevoir les notifications par email</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" id="check2">
+              <label for="check2">Sauvegarder les informations</label>
+            </div>
+          </div>
+          
+          <div class="form-actions">
+            <button class="btn btn-primary">Soumettre</button>
+            <button class="btn btn-outline">Annuler</button>
+          </div>
+        </div>
+        
+        <!-- Cartes -->
+        <div class="component-section">
+          <h3 class="component-title">Cartes de services</h3>
+          
+          <div class="cards-grid">
+            <div class="card">
+              <div class="card-icon">
+                <i class="fas fa-file-invoice"></i>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Déclarations fiscales</h3>
+                <p class="card-text">Remplissez et soumettez vos déclarations fiscales en ligne, en toute simplicité et sécurité.</p>
+                <div class="card-footer">
+                  <a href="#" class="btn btn-primary btn-sm">Accéder</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-icon">
+                <i class="fas fa-credit-card"></i>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Paiement en ligne</h3>
+                <p class="card-text">Effectuez vos paiements d'impôts et taxes rapidement via notre plateforme sécurisée.</p>
+                <div class="card-footer">
+                  <a href="#" class="btn btn-primary btn-sm">Payer</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Alertes -->
+        <div class="component-section">
+          <h3 class="component-title">Messages d'alerte</h3>
+          
+          <div class="alert alert-success">
+            <div class="alert-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="alert-content">
+              <h4 class="alert-title">Paiement réussi</h4>
+              <p class="alert-text">Votre paiement a été traité avec succès. Un reçu a été envoyé à votre adresse email.</p>
+            </div>
+          </div>
+          
+          <div class="alert alert-info">
+            <div class="alert-icon">
+              <i class="fas fa-info-circle"></i>
+            </div>
+            <div class="alert-content">
+              <h4 class="alert-title">Rappel important</h4>
+              <p class="alert-text">La date limite pour les déclarations trimestrielles est fixée au 31 mars 2025.</p>
+            </div>
+          </div>
+          
+          <div class="alert alert-warning">
+            <div class="alert-icon">
+              <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <div class="alert-content">
+              <h4 class="alert-title">Attention</h4>
+              <p class="alert-text">Votre déclaration contient des informations incomplètes. Veuillez vérifier et compléter avant de soumettre.</p>
+            </div>
+          </div>
+          
+          <div class="alert alert-danger">
+            <div class="alert-icon">
+              <i class="fas fa-times-circle"></i>
+            </div>
+            <div class="alert-content">
+              <h4 class="alert-title">Erreur de paiement</h4>
+              <p class="alert-text">Une erreur est survenue lors du traitement de votre paiement. Veuillez réessayer ou contacter le support.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Tableaux -->
+      <div class="subtitle">4. Tableaux</div>
+      <div class="component-section">
+        <h3 class="component-title">Tableau des paiements</h3>
+        
+        <div class="table-container">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Référence</th>
+                <th>Date</th>
+                <th>Type</th>
+                <th>Montant</th>
+                <th>Statut</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>REC-2025-00123</td>
+                <td>12/02/2025</td>
+                <td>Impôt sur le revenu</td>
+                <td>1 250 000 FCFA</td>
+                <td><span class="badge badge-success">Payé</span></td>
+                <td>
+                  <button class="btn btn-sm btn-ghost"><i class="fas fa-eye"></i></button>
+                  <button class="btn btn-sm btn-ghost"><i class="fas fa-download"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>REC-2025-00124</td>
+                <td>15/02/2025</td>
+                <td>Taxe foncière</td>
+                <td>450 000 FCFA</td>
+                <td><span class="badge badge-warning">En attente</span></td>
+                <td>
+                  <button class="btn btn-sm btn-ghost"><i class="fas fa-eye"></i></button>
+                  <button class="btn btn-sm btn-primary"><i class="fas fa-credit-card"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>REC-2025-00125</td>
+                <td>01/03/2025</td>
+                <td>Patente</td>
+                <td>375 000 FCFA</td>
+                <td><span class="badge badge-danger">Retard</span></td>
+                <td>
+                  <button class="btn btn-sm btn-ghost"><i class="fas fa-eye"></i></button>
+                  <button class="btn btn-sm btn-primary"><i class="fas fa-credit-card"></i></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+      <!-- Page d'exemple -->
+      <div class="subtitle">5. Exemple de page de service</div>
+      <div class="component-section">
+        <h3 class="component-title">Page de déclaration fiscale</h3>
+        
+        <img src="/api/placeholder/800/500" alt="Exemple de page de déclaration fiscale" style="width: 100%; border-radius: var(--radius-lg); margin-bottom: var(--space-4);">
+        
+        <p>La page de déclaration fiscale présente une interface claire et intuitive permettant aux utilisateurs de remplir facilement leurs obligations fiscales. Elle comprend un formulaire étape par étape, des aides contextuelles, des calculs automatiques et la possibilité de sauvegarder des brouillons avant soumission finale.</p>
+      </div>
+      
+      <!-- Icônes et illustrations -->
+      <div class="subtitle">6. Icônes et illustrations</div>
+      <div class="component-section">
+        <h3 class="component-title">Collection d'icônes</h3>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: var(--space-4); text-align: center;">
+          <div>
+            <i class="fas fa-file-invoice" style="font-size: 2rem; color: var(--primary); margin-bottom: var(--space-2);"></i>
+            <p style="font-size: var(--font-size-sm);">Déclaration</p>
+          </div>
+          <div>
+            <i class="fas fa-credit-card" style="font-size: 2rem; color: var(--primary); margin-bottom: var(--space-2);"></i>
+            <p style="font-size: var(--font-size-sm);">Paiement</p>
+          </div>
+          <div>
+            <i class="fas fa-history" style="font-size: 2rem; color: var(--primary); margin-bottom: var(--space-2);"></i>
+            <p style="font-size: var(--font-size-sm);">Historique</p>
+          </div>
+          <div>
+            <i class="fas fa-download" style="font-size: 2rem; color: var(--primary); margin-bottom: var(--space-2);"></i>
+            <p style="font-size: var(--font-size-sm);">Télécharger</p>
+          </div>
+          <div>
+            <i class="fas fa-user" style="font-size: 2rem; color: var(--primary); margin-bottom: var(--space-2);"></i>
+            <p style="font-size: var(--font-size-sm);">Compte</p>
+          </div>
+          <div>
+            <i class="fas fa-bell" style="font-size: 2rem; color: var(--primary); margin-bottom: var(--space-2);"></i>
+            <p style="font-size: var(--font-size-sm);">Notifications</p>
+          </div>
+          <div>
+            <i class="fas fa-calculator" style="font-size: 2rem; color: var(--primary); margin-bottom: var(--space-2);"></i>
+            <p style="font-size: var(--font-size-sm);">Calculateur</p>
+          </div>
+          <div>
+            <i class="fas fa-question-circle" style="font-size: 2rem; color: var(--primary); margin-bottom: var(--space-2);"></i>
+            <p style="font-size: var(--font-size-sm);">Aide</p>
+          </div>
+        </div>
+        
+        <h3 class="component-title mt-8">Illustrations</h3>
+        <p>Des illustrations modernes et minimalistes seront utilisées pour représenter visuellement les concepts clés et rendre l'interface plus conviviale.</p>
+        
+        <div style="display: flex; gap: var(--space-4); overflow-x: auto; margin-bottom: var(--space-4); padding: var(--space-2);">
+          <img src="/api/placeholder/200/150" alt="Illustration de paiement" style="border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+          <img src="/api/placeholder/200/150" alt="Illustration de déclaration" style="border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+          <img src="/api/placeholder/200/150" alt="Illustration de service" style="border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+          <img src="/api/placeholder/200/150" alt="Illustration de support" style="border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">
+            <img src="/api/placeholder/40/40" alt="Logo République Togolaise">
+            <span class="footer-logo-text">État Togolais</span>
+          </div>
+          <p class="footer-about">Le service de Recouvrement des Recettes de l'État Togolais est dédié à faciliter la gestion des impôts et taxes pour tous les citoyens et entreprises du Togo.</p>
+        </div>
+        
+        <div>
+          <h3 class="footer-title">Services</h3>
+          <ul class="footer-links">
+            <li><a href="#">Déclarations fiscales</a></li>
+            <li><a href="#">Paiement en ligne</a></li>
+            <li><a href="#">Suivi des dossiers</a></li>
+            <li><a href="#">Demandes d'attestation</a></li>
+            <li><a href="#">Calculateur d'impôts</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="footer-title">Informations</h3>
+          <ul class="footer-links">
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Actualités</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Procédures</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="footer-title">Contact</h3>
+          <div class="footer-contact">
+            <p><i class="fas fa-map-marker-alt"></i> 123 Avenue de l'Indépendance, Lomé</p>
+            <p><i class="fas fa-phone"></i> +228 22 21 XX XX</p>
+            <p><i class="fas fa-envelope"></i> contact@recouvrement.gouv.tg</p>
+          </div>
+          <div class="footer-social">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div>&copy; 2025 République Togolaise. Tous droits réservés.</div>
+        <div class="footer-bottom-links">
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">Accessibilité</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
